@@ -59,7 +59,7 @@
 
     <div class="text-center py-15">
         <span class="uppercase text-s text-gray-400">
-            Blog
+            More
         </span>
 
         <h2 class="text-4xl font-bold py-10">
@@ -67,12 +67,12 @@
         </h2>
 
         <p class="m-auto w-4/5 text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque exercitationem saepe enim veritatis, eos temporibus quaerat facere consectetur qui.
+            Can't get enough of ConspiracyBlog? Check out all our additional content here including our spotify playlist and how to contact us.
         </p>
     </div>
 
     <div class="sm:grid grid-cols-2 w-4/5 m-auto">
-        <div class="flex bg-red-700 text-gray-100 pt-10">
+        <div class="flex bg-green-700 text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block">
                 <span class="uppercase text-xs">
                     Official Spotify PlayList
