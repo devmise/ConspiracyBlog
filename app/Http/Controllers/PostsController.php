@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use App\Models\Tag;
 use Cviebrock\EloquentSluggable\Services\SlugService;
 
 class PostsController extends Controller
@@ -59,6 +60,19 @@ class PostsController extends Controller
             'image_path' => $newImageName,
             'user_id' => auth()->user()->id
         ]);
+
+        $tags = $request->input('tags');
+
+        if ($tags){
+            $tagIds = [];
+
+            foreach ($tags as $tagName) {
+                $tag = Tag::firstOrCreate(['name' => $tagName]);
+                $tagIds[] = $tag->id;
+        }
+
+        $post->tags()->sync($tagIds);
+    }
 
         return redirect('/blog')
             ->with('message', 'Your post has been added!');
@@ -128,5 +142,7 @@ class PostsController extends Controller
         return redirect('/blog')
             ->with('message', 'Your post has been deleted!');
     }
+
+    
 }
 
