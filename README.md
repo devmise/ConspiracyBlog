@@ -2,6 +2,8 @@
 
 Welcome to ConspiracyBlog, the go-to destination for all things conspiracy theories! This website is built using the Laravel framework and serves as a platform to explore, discuss, and share intriguing conspiracy theories from around the world. Get ready to dive into the rabbit hole of mystery and uncover hidden truths!
 
+![ConspiracyBlog Logo](https://cdn.pixabay.com/photo/2022/11/13/15/34/tunnel-7589526_960_720.jpg)
+
 ## Features
 
 - **User Authentication**: Register an account, log in, and enjoy a personalized experience on ConspiracyBlog. Engage in discussions, leave comments, and contribute your own theories.
