@@ -51,6 +51,15 @@
             </label>
         </div>
 
+        <div class="py-4">
+            <label for="tags" class="text-2xl">Tags:</label>
+            <select name="tags[]" id="tags" multiple class="block w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+                @foreach($tags as $tag)
+                    <option value="{{ $tag->id }}">{{ $tag->name }}</option>
+                @endforeach
+            </select>
+        </div>
+
         <button    
             type="submit"
             class="uppercase mt-15 bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">

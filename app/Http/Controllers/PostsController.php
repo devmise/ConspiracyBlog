@@ -32,7 +32,10 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view('blog.create');
+
+        $tags = Tag::all();
+        return view('blog.create', compact('tags'));
+        
     }
 
     /**
