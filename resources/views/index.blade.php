@@ -72,14 +72,15 @@
     </div>
 
     <div class="sm:grid grid-cols-2 w-4/5 m-auto">
-        <div class="flex bg-yellow-700 text-gray-100 pt-10">
+        <div class="flex bg-red-700 text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block">
                 <span class="uppercase text-xs">
-                    PHP
+                    Official Spotify PlayList
                 </span>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0HhGjVBHMhQ4OaB5J0mKVl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
                 <h3 class="text-xl font-bold py-10">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas necessitatibus dolorum error culpa laboriosam. Enim voluptas earum repudiandae consequuntur ad? Expedita labore aspernatur facilis quasi ex? Nemo hic placeat et?
+                    Need some tunes to vibe out to while you browse the site? We got you covered with this banger playlist!
                 </h3>
 
                 <a 
