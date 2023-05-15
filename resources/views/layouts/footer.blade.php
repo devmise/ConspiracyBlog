@@ -37,22 +37,17 @@
             <ul class="py-4 sm:text-s pt-4 text-gray-400">
                 <li class="pb-1">
                     <a href="/">
-                        What we do
+                        Area 51, Dundalk, Ireland
                     </a>
                 </li>
                 <li class="pb-1">
                     <a href="/">
-                        Address
+                        086333666999
                     </a>
                 </li>
                 <li class="pb-1">
                     <a href="/">
-                        Phone
-                    </a>
-                </li>
-                <li class="pb-1">
-                    <a href="/">
-                        Contact
+                        Contact Us
                     </a>
                 </li>
             </ul>
@@ -66,22 +61,22 @@
             <ul class="py-4 sm:text-s pt-4 text-gray-400">
                 <li class="pb-1">
                     <a href="/">
-                        Why we love tech
+                        Illuminati
                     </a>
                 </li>
                 <li class="pb-1">
                     <a href="/">
-                        Why we love design
+                        Aliens
                     </a>
                 </li>
                 <li class="pb-1">
                     <a href="/">
-                        Why to use Laravel
+                        UFOs
                     </a>
                 </li>
                 <li class="pb-1">
                     <a href="/">
-                        Why PHP is the best
+                        Monsters
                     </a>
                 </li>
             </ul>
