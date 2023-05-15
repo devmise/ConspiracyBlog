@@ -13,4 +13,9 @@ class Tag extends Model
 {
     return $this->belongsToMany(Post::class);
 }
+
+public function comments()
+{
+    return $this->hasMany(Comment::class);
+}
 }
