@@ -35,4 +35,16 @@ public function comments()
 {
     return $this->hasMany(Comment::class);
 }
+
+public function storeComment(Request $request, Post $post)
+{
+    $comment = new Comment();
+    $comment->content = $request->input('content');
+    $comment->user_id = auth()->user()->id;
+    $comment->post_id = $post->id;
+    $comment->save();
+
+    return redirect()->back()->with('success', 'Comment posted successfully!');
+}
+
 }

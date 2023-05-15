@@ -23,3 +23,8 @@ Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::post('/posts/{post}/comments', [PostsController::class, 'storeComment'])
+    ->middleware('auth')
+    ->name('comments.store');
+
+

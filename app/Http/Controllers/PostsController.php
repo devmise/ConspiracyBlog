@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Tag;
 use Cviebrock\EloquentSluggable\Services\SlugService;
+use App\Models\Comment;
 
 class PostsController extends Controller
 {
@@ -144,6 +145,17 @@ class PostsController extends Controller
 
         return redirect('/blog')
             ->with('message', 'Your post has been deleted!');
+    }
+
+    public function storeComment(Request $request, Post $post)
+    {
+        $comment = new Comment();
+        $comment->content = $request->input('content');
+        $comment->user_id = auth()->user()->id;
+        $comment->post_id = $post->id;
+        $comment->save();
+
+        return redirect()->back()->with('success', 'Comment posted successfully!');
     }
 
     
