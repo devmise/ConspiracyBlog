@@ -19,4 +19,11 @@
     </p>
 </div>
 
+<form action="{{ route('comments.store', $post) }}" method="POST">
+    @csrf
+    <textarea name="content" rows="4" cols="50"></textarea>
+    <button type="submit">Submit Comment</button>
+</form>
+
+
 @endsection 
