@@ -78,7 +78,7 @@
                     Official Spotify PlayList
                 </span>
                 <br><br/>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0HhGjVBHMhQ4OaB5J0mKVl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0HhGjVBHMhQ4OaB5J0mKVl?utm_source=generator" width="100%" height="352" frameBorder="1" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
                 <h3 class="text-xl font-bold py-10">
                     Need some tunes to vibe out to while you browse the site? We got you covered with this banger playlist!
