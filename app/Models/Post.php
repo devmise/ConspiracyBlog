@@ -47,4 +47,9 @@ public function storeComment(Request $request, Post $post)
     return redirect()->back()->with('success', 'Comment posted successfully!');
 }
 
+public function ratings()
+{
+    return $this->hasMany(Rating::class);
+}
+
 }

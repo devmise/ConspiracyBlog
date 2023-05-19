@@ -15,6 +15,18 @@
                 <a href="/blog/create" class="inline-block px-8 py-4 squared-lg text-lg font-semibold bg-green-500 text-gray-100 hover:bg-green-600">Create Post</a>
             </div>
         @endif
+        @if (Auth::check())
+            <div class="mt-8 text-center">
+                <a href="/blog/create" class="inline-block px-8 py-4 squared-lg text-lg font-semibold bg-green-500 text-gray-100 hover:bg-green-600">Create Post</a>
+            </div>
+        @endif
+        <div class="mt-8 text-center">
+            <a href="{{ route('blog.index', ['sort_by' => 'updated_at', 'sort_order' => 'desc']) }}">Sort by Date Descending</a>
+            <a href="{{ route('blog.index', ['sort_by' => 'updated_at', 'sort_order' => 'asc']) }}">Sort by Date Ascending</a>
+            <a href="{{ route('blog.index', ['sort_by' => 'title', 'sort_order' => 'asc']) }}">Sort by Title A-Z</a>
+            <a href="{{ route('blog.index', ['sort_by' => 'title', 'sort_order' => 'desc']) }}">Sort by Title Z-A</a>
+        </div>
+        
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
             @foreach ($posts as $post)
                 <div class="bg-white shadow-lg squared-lg overflow-hidden">

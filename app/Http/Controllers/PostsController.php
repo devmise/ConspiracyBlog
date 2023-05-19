@@ -15,6 +15,7 @@ class PostsController extends Controller
     {
         $this->middleware('auth', ['except' => ['index', 'show']]);
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -22,6 +23,11 @@ class PostsController extends Controller
      */
     public function index()
     {
+        $sortBy = $request->query('sort_by', 'updated_at');
+        $sortOrder = $request->query('sort_order', 'desc');
+
+        $posts = Post::orderBy($sortBy, $sortOrder)->get();
+
         return view('blog.index')
             ->with('posts', Post::orderBy('updated_at', 'DESC')->get());
     }

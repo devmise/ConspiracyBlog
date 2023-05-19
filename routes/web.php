@@ -14,8 +14,8 @@ use App\Http\Controllers\PostsController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/blog', [PostsController::class, 'index'])->name('posts.index');
 
-Route::get('/', [PagesController::class, 'index']);
 
 Route::resource('/blog', PostsController::class);
 
