@@ -25,8 +25,8 @@
                     </a>
 
                     <form action="{{ route('posts.search') }}" method="GET" class="flex items-center ml-4">
-                        <input type="text" name="search" placeholder="Search for a keyword" class="rounded-l-lg px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-green-500">
-                        <button type="submit" class="bg-green-500 text-white rounded-r-lg px-4 py-2 ml-2 hover:bg-green-600 transition duration-300 ease-in-out">Search</button>
+                        <input type="text" name="search" placeholder="Search for a keyword" class="squared-l-lg px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <button type="submit" class="bg-green-500 text-white squared-r-lg px-4 py-2 ml-2 hover:bg-green-600 transition duration-300 ease-in-out">Search</button>
                     </form>
                 </div>
                 
