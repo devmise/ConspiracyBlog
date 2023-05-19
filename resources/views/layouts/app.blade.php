@@ -23,6 +23,13 @@
                     <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
                         {{ config('app.name', 'ConspiracyBlog') }}
                     </a>
+                    <br><br/>
+
+                    <form action="{{ route('posts.search') }}" method="GET">
+                        <input type="text" name="search" placeholder="Search for a keyword">
+                        <button type="submit">Search</button>
+                    </form>
+
                 </div>
                 <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
                     <a class="no-underline hover:underline" href="/">Home</a>
