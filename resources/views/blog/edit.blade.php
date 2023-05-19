@@ -13,7 +13,7 @@
     <div class="w-4/5 m-auto">
         <ul>
             @foreach ($errors->all() as $error)
-                <li class="w-1/5 mb-4 text-gray-50 bg-red-700 rounded-2xl py-4">
+                <li class="w-1/5 mb-4 text-gray-50 bg-red-700 squared-2xl py-4">
                     {{ $error }}
                 </li>
             @endforeach
@@ -42,7 +42,7 @@
 
         <button    
             type="submit"
-            class="uppercase mt-15 bg-green-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
+            class="uppercase mt-15 bg-green-500 text-gray-100 text-lg font-extrabold py-4 px-8 squared-3xl">
             Submit Post
         </button>
     </form>

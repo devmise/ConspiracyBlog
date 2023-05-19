@@ -32,7 +32,7 @@
 
             <a 
                 href="/blog"
-                class="uppercase bg-green-500 text-gray-100 text-s font-extrabold py-3 px-8 rounded-3xl">
+                class="uppercase bg-green-500 text-gray-100 text-s font-extrabold py-3 px-8 squared-3xl">
                 Find Out More
             </a>
         </div>
@@ -86,7 +86,7 @@
 
                 <a 
                     href=""
-                    class="uppercase bg-transparent border-2 border-gray-100 text-gray-100 text-xs font-extrabold py-3 px-5 rounded-3xl">
+                    class="uppercase bg-transparent border-2 border-gray-100 text-gray-100 text-xs font-extrabold py-3 px-5 squared-3xl">
                     Find Out More
                 </a>
             </div>
