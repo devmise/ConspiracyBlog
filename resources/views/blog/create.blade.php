@@ -51,14 +51,14 @@
             </label>
         </div>
 
-        {{-- <div class="py-4">
+         <div class="py-4">
             <label for="tags" class="text-2xl">Tags:</label>
             <select name="tags[]" id="tags" multiple class="block w-full mt-1 squared-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
                 @foreach($tags as $tag)
                     <option value="{{ $tag->id }}">{{ $tag->name }}</option>
                 @endforeach
             </select>
-        </div> --}}
+        </div> 
 
         <button    
             type="submit"
