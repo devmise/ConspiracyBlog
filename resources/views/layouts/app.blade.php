@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'ConspiracyBlog') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -19,18 +19,17 @@
     <div id="app">
         <header class="bg-green-800 py-6">
             <div class="container mx-auto flex justify-between items-center px-6">
-                <div>
+                <div class="flex items-center">
                     <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
                         {{ config('app.name', 'ConspiracyBlog') }}
                     </a>
-                    <br><br/>
 
-                    <form action="{{ route('posts.search') }}" method="GET">
-                        <input type="text" name="search" placeholder="Search for a keyword">
-                        <button type="submit">Search</button>
+                    <form action="{{ route('posts.search') }}" method="GET" class="flex items-center ml-4">
+                        <input type="text" name="search" placeholder="Search for a keyword" class="rounded-l-lg px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <button type="submit" class="bg-green-500 text-white rounded-r-lg px-4 py-2 ml-2 hover:bg-green-600 transition duration-300 ease-in-out">Search</button>
                     </form>
-
                 </div>
+                
                 <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
                     <a class="no-underline hover:underline" href="/">Home</a>
                     <a class="no-underline hover:underline" href="/blog">Blog</a>
@@ -41,11 +40,9 @@
                         @endif
                     @else
                         <span>{{ Auth::user()->name }}</span>
-
                         <a href="{{ route('logout') }}"
                            class="no-underline hover:underline"
-                           onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
                             {{ csrf_field() }}
                         </form>
