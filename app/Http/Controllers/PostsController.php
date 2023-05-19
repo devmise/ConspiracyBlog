@@ -150,7 +150,7 @@ class PostsController extends Controller
     public function storeComment(Request $request, Post $post)
     {
         $comment = new Comment();
-        $comment->content = $request->input('content');
+        $comment->description = $request->input('description');
         $comment->user_id = auth()->user()->id;
         $comment->post_id = $post->id;
         $comment->save();
@@ -158,6 +158,15 @@ class PostsController extends Controller
         return redirect()->back()->with('success', 'Comment posted successfully!');
     }
 
-    
+    public function search(Request $request)
+    {
+        $searchQuery = $request->input('search');
+
+        $posts = Post::where('title', 'LIKE', '%' . $searchQuery . '%')
+            ->orWhere('description', 'LIKE', '%' . $searchQuery . '%')
+            ->get();
+
+        return view('posts.search', compact('posts', 'searchQuery'));
+    }
 }
 
